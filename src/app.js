@@ -15,6 +15,20 @@ app.use(express.urlencoded({extended:true,limit:
 }))
 app.use(express.static("public"))
 app.use(cookieParser())
+
+//routes import
+
+import UserRouter from './routes/User.routes.js'
+
+
+
+
+//routes declaration
+
+app.use("/api/v1/users",UserRouter)
+
+// http://localhost:8000/api/v1/users/register
+
 export{app}
 
 connectDB()
