@@ -5,4 +5,8 @@ const router = Router();
 
 router.route("/register").post(registerUser);
 
-export default a;
+router.route("/test").get((req, res) => {
+    res.status(200).json({ message: "Test route is working" });
+});
+
+export default router;
