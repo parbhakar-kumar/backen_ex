@@ -49,7 +49,7 @@ const usermodel=new Schema(
 
 
         }
-    }
+    },
     {
         timestamps: true,
     }
