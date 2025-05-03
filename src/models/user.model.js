@@ -1,6 +1,6 @@
-import mongoose from "mongoose";
+import mongoose, { Schema } from "mongoose";
 
-const usermodel=new mongoose(
+const usermodel=new Schema(
     {
         usersName:{
             required:true,
@@ -49,6 +49,9 @@ const usermodel=new mongoose(
 
 
         }
+    }
+    {
+        timestamps: true,
     }
 )
 
