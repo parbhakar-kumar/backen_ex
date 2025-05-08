@@ -3,35 +3,35 @@ import mongoose, { Schema } from "mongoose";
 const videoSchema = new Schema(
     {
         videoFile:{
-            types:String,
+            type:String,
             required:true
         },
         thumbnail:{
-            types:String,
+            type:String,
             required:true
         },
         title:{
-            types:String,
+            type:String,
             required:true
         },
         description:{
-            types:String,
+            type:String,
             required:true
         },
         duration:{
-            types:Number,
+            type:Number,
             required:true
         },
         viwes:{
-            types:Number,
+            type:Number,
             default:0
         },
         isPublished:{
-            types:Boolean,
+            type:Boolean,
             default:true 
         },
         owner:{
-            types:Schema.Types.ObjectId,
+            type:Schema.type.ObjectId,
             ref:"User"
         }
 
